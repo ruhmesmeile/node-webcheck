@@ -27,15 +27,16 @@ var Webcheck = exports = module.exports = function Webcheck(params) { // params 
   params = params || {};
 
   _.extend(params, {
-    maxConnections: 10,
-    timeout: 60000,
-    userAgent: "node-webcheck",
-    retries: 3,
-    retryTimeout: 10000,
-    forceUTF8: true
+    maxConnections: params.maxConnections || 10,
+    timeout: params.timeout || 60000,
+    userAgent: params.userAgent || "node-webcheck",
+    retries: params.retries || 3,
+    retryTimeout: params.retryTimeout || 10000,
+    forceUTF8: params.forceUTF8 || true
   });
   
   var crawler = new Crawler({
+    "debug": params.debug || false
     "maxConnections": params.maxConnections,
     "timeout": params.timeout,
     "userAgent": params.userAgent,
