@@ -1,6 +1,6 @@
 "use strict";
 
-var Crawler = require("crawler");
+var Crawler = require("crawler").Crawler;
 var util = require("util");
 var async = require("async");
 var EventEmitter = require("events").EventEmitter;
