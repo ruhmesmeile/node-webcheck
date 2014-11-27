@@ -36,7 +36,7 @@ var Webcheck = exports = module.exports = function Webcheck(params) { // params 
   });
   
   var crawler = new Crawler({
-    "debug": params.debug || false
+    "debug": params.debug || false,
     "maxConnections": params.maxConnections,
     "timeout": params.timeout,
     "userAgent": params.userAgent,
