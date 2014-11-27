@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "async": "~0.2.9",
-    "crawler": "git://github.com/ruhmesmeile/node-crawler.git#0.2.7",
+    "crawler": "git://github.com/ruhmesmeile/node-crawler.git#0.2.7-webcheck",
     "url": "~0.7.9",
     "underscore": "~1.6.0"
   }
